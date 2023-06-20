@@ -1,0 +1,228 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Calibri;
+    background-color: #171933;
+    box-sizing: border-box;
+}
+
+.content{    
+    background-color: #fff;
+    background-attachment: fixed;    
+    display: flex;    
+    flex-direction: column;
+    position: absolute;
+    left: 35%;
+    top:20px ;
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 3px 3px #bbb ;
+    border: 1px solid rgb(233, 28, 123);
+    padding: 20px;
+    text-align: center;
+}
+
+#titre h1 {
+    color:rgb(233, 28, 123) ;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.addNew{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    border: 0.5px solid rgba(233, 28, 123,1);
+    padding: 0 25px;
+    background-color:rgb(233, 28, 123,1);
+    border-radius: 50px;
+    box-shadow: 0.1px 0.1px 0.1px 0.1px #bbb ;
+    cursor:pointer;
+    color: #fff;
+}
+
+.addNew:hover{
+    background-color:#fff;
+    border: 0.5px solid rgba(233, 28, 123,1);
+    box-shadow: 0.1px 0.1px 0.1px 0.1px #444 ;
+    color:rgba(233, 28, 123,1) ;
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.addText{
+    font-size: 22px;
+    color: inherit;
+}
+
+.addIcon{
+    font-size: 20px;
+    color: inherit;
+}
+
+#allTask{
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    height: 400px;
+    margin-top: 5px;
+    padding-top:5px;
+    background-color:rgba(233, 28, 123,0.4);
+    /* border: 0.5px solid rgb(50, 71, 255,1); */
+    border-radius: 20px;
+    box-shadow: 0.3px 0.3px 0.3px 0.3px #bbb ;
+    overflow-x: hidden;
+}
+#titre2{
+    background-attachment: fixed;
+}
+
+#titre2 h3{
+    color:rgb(233, 28, 123,1);
+    font-size: 23px;
+}
+
+#titre2 h3:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.task{
+    background-color:rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    height: 110;
+    margin: 5px 10px;
+    padding: 0 10px;
+    box-shadow: 0.3px 0.3px 0.3px 0.3px #aaa;
+    display: flex;
+    flex-direction: column; 
+    padding: 15px;
+}
+.task .sup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size:20px;
+    font-weight:bold;
+}
+.task .sup .dateA{
+    color:#000;
+}
+.task .sup .titreA{
+    color:rgb(233, 28, 123,1);
+}
+.task .descA{
+    overflow-wrap:break-word;
+    text-align: start;
+    margin: 10px 0;
+}
+.task .inf{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.task .inf i{
+    color:rgb(233, 28, 123,1);
+    margin: 0 5px;
+    cursor:pointer;
+}
+
+.overlay{
+    width: 100vmax;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(23, 25, 51, 0.608);
+    cursor:pointer;
+}
+
+.modalAll{
+    visibility: hidden;
+}
+
+.modalAll.active{
+    visibility:visible ;
+}
+
+.trigger{
+    background-color: #fff;
+    background-attachment: fixed;    
+    display: flex;    
+    flex-direction: column;
+    position: absolute;
+    left: 37%;
+    top:45px ;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 3px 3px #bbb ;
+    border: 1px solid rgb(233, 28, 123);
+    padding: 20px;
+    text-align: center;
+}
+
+.titre3 p{
+    color:rgb(233, 28, 123);
+    font-size:23px;
+}
+
+.titre3{
+    border-bottom: solid 1px rgb(233, 28, 123);
+}
+.trigger form{
+    margin-top: 10px;
+}
+.element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:25px 0;
+}
+form input{
+    height: 30px;
+    border-radius: 10px;
+    border: 0.5px solid #aaa;
+    outline: none;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+form textarea{
+    border: 0.5px solid #aaa;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'century gothic';
+
+}
+input:focus, textarea:focus {
+    border:2px solid rgb(233, 28, 123);
+}
+
+.trigger label{
+    color:rgb(233, 28, 123,1);
+    font-size:20px;
+    align-self: flex-start;
+}
+.footer button{
+    padding: 7px 30px;
+    border: none;
+    margin: 0px 20px;
+    color: #fff;
+    background-color:rgb(233, 28, 123,1);
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px #bbb ;
+    cursor:pointer;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+    height: 80%;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(233, 28, 123,1);
+    border-radius: 10px;
+}

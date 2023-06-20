@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cc4b4e1a7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div id="titre"><h1>My to do List app</h1></div> 
+        <div class="addNew modal">
+            <div class="addText"><h5>Add new task</h5></div>
+            <div class="addIcon"><i class="fa-solid fa-circle-plus"></i></div>
+        </div>
+        <div id="titre2">
+                <h3>Tasks</h3>
+        </div>
+        <div id="allTask"></div>
+
+    </div>    
+    <div class="modalAll">
+        <div class="modal overlay"></div>
+        <div class="trigger">
+            <div class="titre3"><p>Ajouter une nouvelle tache</p></div>
+            <form id="form">
+                <div class="taskTitle element">
+                    <label for="textInput">Task Title</label>
+                    <input type="text" id="textInput" required>
+                </div>
+                <div class="taskDate element">
+                    <label for="dateInput"> Task Date</label>
+                    <input type="date" name="date" id="dateInput" placeholder="10-12-2022" required>
+                </div>
+                <div class="taskDes element">
+                    <label for="desc">Task Description</label>
+                    <textarea  name="" id="desc" cols="30" rows="10" maxlength="80" ></textarea>
+                </div>
+                <div class="footer">
+                    <button class="modal submit" type="submit">Add</button>
+                    <button class="modal close">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="main.js"></script>
+</html>
